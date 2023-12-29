@@ -181,6 +181,22 @@ header .location_txt {
   font-weight: 500;
 }
 
+.pageRestoHeader {
+  width: 100vw;
+  padding: 14px 0 13px 0;
+  position: relative;
+  text-align: center;
+}
+.pageRestoHeader_logo {
+  height: 36px;
+}
+.pageRestoHeader_arrow {
+  position: absolute;
+  font-size: 30px;
+  top: 14px;
+  left: 17px;
+}
+
 footer object {
   width: 100vw;
   height: 183px;
@@ -218,6 +234,36 @@ footer object {
 }
 .footer ul .footer_li-short {
   width: 130px;
+}
+
+/* pageresto */
+.pageResto {
+  position: relative;
+}
+.pageResto_img {
+  width: 100vw;
+  height: 275px;
+}
+.pageResto_content {
+  position: absolute;
+  width: 100vw;
+  background-color: #F6F6F6;
+  top: 220px;
+  border-radius: 40px 40px 0px 0px;
+  padding: 32px 13px 40px 13px;
+}
+.pageResto_content_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.pageResto_content_title_h1 {
+  font-family: "Shrikhand", serif;
+  font-size: 1.75rem;
+}
+.pageResto_content_title_heart {
+  font-size: 1.313rem;
+  margin-right: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */

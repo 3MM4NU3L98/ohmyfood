@@ -1,0 +1,36 @@
+
+.pageResto {
+    position: relative;
+
+
+    &_img {
+        width: 100vw;
+        height: 275px;
+    }
+
+    &_content {
+        position: absolute;
+        width: 100vw;
+        background-color: $body-bg-color;
+        top: 220px;
+        border-radius: 40px 40px 0px 0px;
+        padding: 32px 13px 40px 13px;
+
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+
+            &_h1 {
+                font-family: $fontlogotitle;
+                font-size: 1.75rem;
+            }
+
+            &_heart {
+                font-size: 1.313rem;
+                margin-right: 28px;
+            }
+        }
+    }
+
+}

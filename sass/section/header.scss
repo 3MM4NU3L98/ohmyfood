@@ -21,3 +21,25 @@ header {
 
     }
 }
+
+.pageRestoHeader {
+    width: 100vw;
+    padding: 14px 0 13px 0;
+    position: relative;
+    text-align: center;
+
+    &_logo {
+        height: 36px;
+    }
+
+    &_arrow {
+        position: absolute;
+        font-size: 30px;
+        top: 14px;
+        left: 17px;
+
+    }
+
+}
+
+
