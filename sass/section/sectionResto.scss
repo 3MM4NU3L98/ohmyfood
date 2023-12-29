@@ -1,0 +1,16 @@
+// section de main pour le chois du resto
+#sectionResto {
+    width: 100vw;
+    padding: 54px 18px 66px 17px;
+
+    .h2homepage {
+        margin: 0 0 6px 3px;
+        margin-bottom: 6px;
+    }
+
+    .resto {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

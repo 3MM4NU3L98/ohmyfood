@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 251px;
+    margin-top: 18px;
+    border-radius: 15px;
+    background-color: $card-bg-color;
+
+    &_img {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        height: 174px;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+
+        &_txt {
+            padding: 16px 0 0 13px;
+
+            .restoName {
+                font-size: 1.125rem;
+                font-weight: $font-weight-Bold;
+                margin-bottom: 5px;
+            }
+
+            .restoPlace {
+                font-size: 1.063rem;
+                font-weight: $font-weight-Light;
+            }
+        }
+
+        &_heart {
+            padding: 23px 25px 0 0;
+
+            .fa-heart {
+                font-size: 21px;
+            }
+            
+            
+        }
+    }
+}

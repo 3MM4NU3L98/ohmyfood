@@ -1,0 +1,223 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+/* Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+/* global */
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  box-sizing: border-box;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+
+.h1homepage {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.h2homepage {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Homepage */
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 39px 0 57px 0;
+}
+.sectionInfo_content {
+  color: #353535;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+
+.button {
+  text-align: center;
+  padding: 13px 16px;
+  line-height: 24px;
+  width: max-content;
+  border-radius: 25px;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.button:hover {
+  background: linear-gradient(0deg, #a16be0 -11.44%, #ff93e1 123.93%);
+}
+
+.sectionFonctionnement {
+  background-color: #FFFFFF;
+  width: 100vw;
+  padding: 48px 20px 68px 20px;
+}
+.sectionFonctionnement .h2homepage {
+  margin-bottom: 26px;
+}
+.sectionFonctionnement .frameFonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.sectionFonctionnement .frameFonctionnement .frame {
+  background-color: #F6F6F6;
+  position: relative;
+  margin-left: 12.5px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.sectionFonctionnement .frameFonctionnement .frame_round {
+  position: absolute;
+  left: -12.5px;
+  top: 24px;
+  display: inline-block;
+  width: 24px;
+  line-height: 24px;
+  background-color: #9356DC;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 50%;
+}
+.sectionFonctionnement .frameFonctionnement .frame_icon {
+  position: absolute;
+  top: 27px;
+  left: 35.5px;
+}
+.sectionFonctionnement .frameFonctionnement .frame_icon .fa-color {
+  color: #9356DC;
+}
+.sectionFonctionnement .frameFonctionnement .frame_txt {
+  position: relative;
+  line-height: 72px;
+  font-weight: 500;
+}
+
+#sectionResto {
+  width: 100vw;
+  padding: 54px 18px 66px 17px;
+}
+#sectionResto .h2homepage {
+  margin: 0 0 6px 3px;
+  margin-bottom: 6px;
+}
+#sectionResto .resto {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 251px;
+  margin-top: 18px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.card_img {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 174px;
+}
+.card_content {
+  display: flex;
+  justify-content: space-between;
+}
+.card_content_txt {
+  padding: 16px 0 0 13px;
+}
+.card_content_txt .restoName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.card_content_txt .restoPlace {
+  font-size: 1.063rem;
+  font-weight: 300;
+}
+.card_content_heart {
+  padding: 23px 25px 0 0;
+}
+.card_content_heart .fa-heart {
+  font-size: 21px;
+}
+
+header {
+  width: 100vw;
+}
+header .logo {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 14px 0 13px 0;
+}
+header .location {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  height: 50px;
+  padding-top: 15px;
+}
+header .location_txt {
+  font-weight: 500;
+}
+
+footer object {
+  width: 100vw;
+  height: 183px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 22px 25px;
+  background-color: #000000;
+}
+.footer h4 {
+  color: #FFFFFF;
+  font-family: "Shrikhand", serif;
+  font-size: 1.125rem;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer ul .footer_li {
+  color: #FFFFFF;
+  list-style: none;
+}
+.footer ul .footer_li-long {
+  font-weight: 500;
+  width: 190px;
+}
+.footer ul .footer_li-long .fa-solid {
+  color: #FFFFFF;
+  font-size: 13px;
+}
+.footer ul .footer_li-short {
+  width: 130px;
+}
+
+/*# sourceMappingURL=style.css.map */

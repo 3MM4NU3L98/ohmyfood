@@ -1,0 +1,57 @@
+.sectionFonctionnement {
+    background-color: $main-bg-color;
+    width: 100vw;
+    padding: 48px 20px 68px 20px;
+
+    .h2homepage {
+        margin-bottom: 26px;
+    }
+
+    .frameFonctionnement {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .frame {
+            background-color: $body-bg-color;
+            position: relative;
+            margin-left: 12.5px;
+            border-radius: 20px;
+            text-align: center;
+            @include Shadow(15px, 0.15);
+
+
+            &_round {
+                position: absolute;
+                left: -12.5px;
+                top: 24px;
+                display: inline-block;
+                width: 24px;
+                line-height: 24px;
+                background-color: $primary-colors;
+                font-size:14px;
+                font-weight: $font-weight-Medium;
+                color: $txt-button-color;
+                text-align: center;
+                border-radius:50%;
+            }
+
+            &_icon {
+                position: absolute;
+                top: 27px;
+                left: 35.5px;
+
+                .fa-color {
+                    color: $primary-colors;
+                }
+            }
+
+            &_txt {
+                position: relative;
+                line-height: 72px;
+                font-weight: $font-weight-Medium;
+            }
+        }
+    }
+
+}

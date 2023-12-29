@@ -1,0 +1,40 @@
+footer object {
+    width: 100vw;
+    height: 183px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 22px 25px;
+    background-color: $footer-bg-color;
+
+    h4 {
+        color: $txt-footer-color;
+        font-family: $fontlogotitle; 
+        font-size: 1.125rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        .footer_li {
+            color: $txt-footer-color;
+            list-style: none;
+            &-long{
+                font-weight: $font-weight-Medium;
+                width: 190px;
+                .fa-solid {
+                    color: $txt-footer-color;
+                    font-size: 13px;
+                }  
+            }
+            &-short {
+                width: 130px;
+            }
+        }
+    }
+}
+

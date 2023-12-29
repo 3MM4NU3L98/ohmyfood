@@ -1,0 +1,7 @@
+@mixin Shadow($blurradius : 10px, $opacity : 0.25) {
+    box-shadow: 0px 4px $blurradius 0px rgba(0, 0, 0, $opacity); 
+} 
+
+@mixin bg-linearGradient($color1, $color2) {
+    background: linear-gradient(0deg, $color1 -11.44%, $color2 123.93%);
+}
