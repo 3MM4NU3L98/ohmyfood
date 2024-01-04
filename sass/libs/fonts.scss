@@ -1,21 +1,23 @@
 /* Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 /* Font Awesome */
-    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 // Font Variables
-    $fontlogotitle : 'Shrikhand', serif;
-    $fonttext: 'Roboto', sans-serif;
+$fontlogotitle : 'Shrikhand',
+serif;
+$fonttext: 'Roboto', sans-serif;
 
 // Text configuration
-    $font-size : 16px;
-    $font-weight-Light : 300;
-    $font-weight-Normal : 400;
-    $font-weight-Medium : 500;
-    $font-weight-Bold : 700;
+$font-size : 16px;
+$font-weight-Light : 300;
+$font-weight-Normal : 400;
+$font-weight-Medium : 500;
+$font-weight-Bold : 700;
 
 //Text colors
-    $txt-color1 : #000000;
-    $txt-color2 : #353535;
-    $txt-button-color : #FFFFFF;
-    $txt-footer-color : #FFFFFF;
+$txt-color1 : #000000;
+$txt-color2 : #353535;
+$txt-color3 : #008766;
+$txt-button-color : #FFFFFF;
+$txt-footer-color : #FFFFFF;

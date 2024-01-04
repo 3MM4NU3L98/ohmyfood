@@ -10,9 +10,11 @@
 @import 'section/sectionFonctionnement';
 @import 'section/sectionResto';
 @import 'libs/card';
+@import 'libs/heart.scss';
 
 @import 'section/header';
 @import 'section/footer';
 
 /* pageresto */
-@import 'section/restopage'
+@import 'section/restopage';
+@import 'libs/itemMenu';

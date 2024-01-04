@@ -1,36 +1,26 @@
 // Colors variables
-    $primary-colors : #9356DC;
-    $primary-colors-lighten : lighten(#9356DC, 5%);
-    $secondary-colors : #FF79DA;
-    $secondary-colors-lighten : lighten(#FF79DA, 5%);
-    $tertiary-colors : #99E2D0;
+$primary-colors : #9356DC;
+$primary-colors-lighten : lighten(#9356DC, 5%);
+$secondary-colors : #FF79DA;
+$secondary-colors-lighten : lighten(#FF79DA, 5%);
+$tertiary-colors : #99E2D0;
 
 // background-color body
-    $body-bg-color : #F6F6F6;
+$body-bg-color : #F6F6F6;
 
 // background-color main
-    $main-bg-color : #FFFFFF;
+$main-bg-color : #FFFFFF;
 
 // background-color card
-    $card-bg-color : #ffffff;
+$card-bg-color : #ffffff;
+
+// background-color itemMenu
+$ItemMenu-bg-color : #ffffff;
 
 // background-color header
-    $header-bg-color1 : #ffffff;
-    $header-bg-color2 : #EAEAEA;
+$header-bg-color1 : #ffffff;
+$header-bg-color2 : #EAEAEA;
 
 
 // background-color footer
-    $footer-bg-color : #000000;
-
-
-
-
-
-
-
-
-
-
-
-
-
+$footer-bg-color : #000000;

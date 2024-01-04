@@ -1,0 +1,39 @@
+.content_heart {
+    position: relative;
+
+    .fa-heart {
+        position: absolute;
+        font-size: 1.313rem;
+    }
+
+    .fa-solid {
+        @include bg-linearGradient($primary-colors, $secondary-colors);
+        background-clip: text;
+        color: transparent;
+        opacity: 0;
+
+    }
+
+    &:hover {
+
+        .fa-regular {
+            opacity: 0;
+        }
+
+
+        .fa-solid {
+            opacity: 1;
+            animation: zoomin 2s
+        }
+
+        @keyframes zoomin {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+    }
+}

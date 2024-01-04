@@ -1,34 +1,60 @@
-
 .pageResto {
     position: relative;
+    width: 100%;
 
 
     &_img {
-        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
         height: 275px;
     }
 
     &_content {
-        position: absolute;
-        width: 100vw;
         background-color: $body-bg-color;
-        top: 220px;
         border-radius: 40px 40px 0px 0px;
         padding: 32px 13px 40px 13px;
+        margin-top: 220px;
 
         &_title {
+
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
 
             &_h1 {
                 font-family: $fontlogotitle;
                 font-size: 1.75rem;
             }
 
-            &_heart {
-                font-size: 1.313rem;
-                margin-right: 28px;
+            .content_heart {
+                padding: 10px 41px 0 0;
+            }
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-weight: $font-weight-Light;
+            text-transform: uppercase;
+        }
+
+        hr {
+            width: 40px;
+            // height: 3px;
+            border: 1.5px solid $tertiary-colors;
+        }
+
+        &_submenu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_button {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            .button {
+                width: 186px;
             }
         }
     }

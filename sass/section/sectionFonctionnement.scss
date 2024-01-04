@@ -29,27 +29,32 @@
                 width: 24px;
                 line-height: 24px;
                 background-color: $primary-colors;
-                font-size:14px;
+                font-size: 14px;
                 font-weight: $font-weight-Medium;
                 color: $txt-button-color;
                 text-align: center;
-                border-radius:50%;
+                border-radius: 50%;
             }
 
             &_icon {
                 position: absolute;
                 top: 27px;
                 left: 35.5px;
-
-                .fa-color {
-                    color: $primary-colors;
-                }
             }
 
             &_txt {
                 position: relative;
                 line-height: 72px;
                 font-weight: $font-weight-Medium;
+            }
+
+            &:hover {
+                background: lighten($secondary-colors, 20%);
+                // @include bg-linearGradient($primary-colors-lighten, );
+
+                .frame_icon .fa-solid {
+                    color: $primary-colors;
+                }
             }
         }
     }
