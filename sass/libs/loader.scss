@@ -1,200 +1,54 @@
 .loader {
     position: absolute;
-    top: 0;
-    left: 0;
-    // width: 100%;
-    // height: 100%;
-    // background-color: $body-bg-color;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    animation: invisible 0.5s linear 3s 1 both;
 }
 
-.contener_loader_18 {
-    width: 90px;
-    height: 90px;
-    background-image: url(repertoire/http://www.wifeo.com/image_design_v3/images_loaders/l/loaderx301406729699.png);
-    background-position: center;
-    background-repeat: no-repeat
-}
-
-.rond_sup {
-    border-radius: 80px;
-    width: 80px;
-    height: 80px;
-    border-top: 5px solid #FFFFFF;
-    border-right: 5px solid #00A096;
-    border-bottom: 5px solid #00A096;
-    border-left: 5px solid #00A096;
-    -webkit-animation: anim_sup 1.4s infinite linear;
-    -moz-animation: anim_sup 1.4s infinite linear;
-    -ms-animation: anim_sup 1.4s infinite linear;
-    -o-animation: anim_sup 1.4s infinite linear;
-    animation: anim_sup 1.4s infinite linear
-}
-
-.rond_mil {
-    border-radius: 70px;
-    width: 70px;
-    height: 70px;
-    border-top: 5px solid #FFFFFF;
-    border-right: 5px solid #97BF0D;
-    border-bottom: 5px solid #97BF0D;
-    border-left: 5px solid #97BF0D;
-    -webkit-animation: anim_mil 1.4s infinite linear;
-    -moz-animation: anim_mil 1.4s infinite linear;
-    -ms-animation: anim_mil 1.4s infinite linear;
-    -o-animation: anim_mil 1.4s infinite linear;
-    animation: anim_mil 1.4s infinite linear
-}
-
-.rond_petit {
-    border-radius: 60px;
-    width: 60px;
-    height: 60px;
-    border-top: 5px solid #FFFFFF;
-    border-right: 5px solid #F8B334;
-    border-bottom: 5px solid #F8B334;
-    border-left: 5px solid #F8B334;
-    -webkit-animation: anim_petit 3s infinite linear;
-    -moz-animation: anim_petit 3s infinite linear;
-    -ms-animation: anim_petit 3s infinite linear;
-    -o-animation: anim_petit 3s infinite linear;
-    animation: anim_petit 3s infinite linear
-}
-
-.rond_mini {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    border-top: 5px solid #FFFFFF;
-    border-right: 5px solid #CB2025;
-    border-bottom: 5px solid #CB2025;
-    border-left: 5px solid #CB2025;
-    -webkit-animation: anim_mini 8s infinite linear;
-    -moz-animation: anim_mini 8s infinite linear;
-    -ms-animation: anim_mini 8s infinite linear;
-    -o-animation: anim_mini 8s infinite linear;
-    animation: anim_mini 8s infinite linear
-}
-
-
-@keyframes anim_sup {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
-@keyframes anim_mil {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(-720deg)
-    }
-}
-
-@keyframes anim_petit {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(1800deg)
-    }
-}
-
-@keyframes anim_mini {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(2520deg)
-    }
-}
-
-
-/* HTML: <div class="loaderz"></div> */
-.loaderz {
-    width: 50px;
-    aspect-ratio: 1;
-    display: grid;
-    border: 4px solid #0000;
-    border-radius: 50%;
-    border-color: #ccc #0000;
-    animation: l16 1s infinite linear;
-}
-
-.loaderz::before,
-.loaderz::after {
-    content: "";
-    grid-area: 1/1;
-    margin: 2px;
-    border: inherit;
-    border-radius: 50%;
-}
-
-.loaderz::before {
-    border-color: #f03355 #0000;
-    animation: inherit;
-    animation-duration: .5s;
-    animation-direction: reverse;
-}
-
-.loaderz::after {
-    margin: 8px;
-}
-
-@keyframes l16 {
-    100% {
-        transform: rotate(1turn)
-    }
-}
-
-// ex2
-.custom-loading-spinner {
-    cursor: progress;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.custom-loading-spinner::before {
+.loader::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 10001;
+    z-index: 101;
     overflow: hidden;
-    background: #0b0b0b;
-    opacity: 0.6;
+    background: $main-bg-color;
+    opacity: 1;
 }
 
-.custom-loading-spinner::after {
+.loader::after {
     box-sizing: border-box;
-    z-index: 10002;
+    z-index: 102;
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -25px 0 0 -25px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: cf-loading 1s linear infinite;
+    border: 10px solid $secondary-colors;
+    border-top: 10px solid $primary-colors;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    animation: spin 2s linear infinite;
+
 }
 
-@keyframes cf-loading {
-    0% {
-        transform: rotate(0deg);
-    }
-
+@keyframes spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes invisible {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        height: 0;
+
     }
 }

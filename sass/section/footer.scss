@@ -1,6 +1,10 @@
 footer object {
     width: 100vw;
     height: 183px;
+
+    @include breakpoint(desktop) {
+        height: 114px;
+    }
 }
 
 .footer {
@@ -11,30 +15,56 @@ footer object {
     padding: 22px 25px;
     background-color: $footer-bg-color;
 
+
+    @include breakpoint(desktop) {
+        flex-direction: row-reverse;
+        height: 114px;
+        padding: 30px 25px;
+    }
+
     h4 {
         color: $txt-footer-color;
-        font-family: $fontlogotitle; 
+        font-family: $fontlogotitle;
         font-size: 1.125rem;
+
+        @include breakpoint(desktop) {
+            width: 138px;
+            align-self: self-end;
+        }
     }
+
     ul {
         display: flex;
         flex-direction: column;
         gap: 7px;
+
+        @include breakpoint(desktop) {
+            flex-direction: row;
+            height: 54px;
+            align-self: self-end;
+        }
+
         .footer_li {
             color: $txt-footer-color;
             list-style: none;
-            &-long{
+
+            @include breakpoint(desktop) {
+                align-self: self-end;
+            }
+
+            &-long {
                 font-weight: $font-weight-Medium;
                 width: 190px;
+
                 .fa-solid {
                     color: $txt-footer-color;
                     font-size: 13px;
-                }  
+                }
             }
+
             &-short {
                 width: 130px;
             }
         }
     }
 }
-

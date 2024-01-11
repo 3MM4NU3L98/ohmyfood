@@ -1,25 +1,42 @@
 .pageResto {
     position: relative;
     width: 100%;
+    text-align: center;
+    background-color: $main-bg-color;
 
 
     &_img {
+        display: block;
         position: absolute;
-        z-index: -1;
+        z-index: 1;
         width: 100%;
         height: 275px;
     }
 
     &_content {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
         background-color: $body-bg-color;
         border-radius: 40px 40px 0px 0px;
         padding: 32px 13px 40px 13px;
         margin-top: 220px;
+        width: 100%;
+        max-width: 1055px;
+
+        @include breakpoint(desktop) {
+            padding: 51px 210px 40px 210px;
+        }
 
         &_title {
 
             display: flex;
             justify-content: space-between;
+
+            @include breakpoint(tablett) {
+                justify-content: center;
+                gap: 24px;
+            }
 
             &_h1 {
                 font-family: $fontlogotitle;
@@ -34,12 +51,12 @@
         h2 {
             margin-top: 40px;
             font-weight: $font-weight-Light;
+            text-align: left;
             text-transform: uppercase;
         }
 
         hr {
             width: 40px;
-            // height: 3px;
             border: 1.5px solid $tertiary-colors;
         }
 
@@ -58,5 +75,32 @@
             }
         }
     }
+
+}
+
+.entrees,
+.plats,
+.desserts {
+    opacity: 0;
+}
+
+.entrees {
+    animation: visible 200ms 300ms both;
+}
+
+.plats {
+    animation: visible 200ms 600ms both;
+
+}
+
+.desserts {
+    animation: visible 200ms 900ms both;
+}
+
+@keyframes visible {
+    to {
+        opacity: 1;
+    }
+
 
 }

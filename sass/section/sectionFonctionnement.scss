@@ -3,8 +3,16 @@
     width: 100vw;
     padding: 48px 20px 68px 20px;
 
+    @include breakpoint(desktop) {
+        padding: 50px 180px;
+    }
+
     .h2homepage {
         margin-bottom: 26px;
+
+        @include breakpoint(desktop) {
+            margin-bottom: 25px;
+        }
     }
 
     .frameFonctionnement {
@@ -12,13 +20,25 @@
         flex-direction: column;
         gap: 25px;
 
+        @include breakpoint(desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 36px;
+        }
+
         .frame {
+            display: flex;
             background-color: $body-bg-color;
             position: relative;
             margin-left: 12.5px;
             border-radius: 20px;
-            text-align: center;
+            padding-left: 12px;
+            justify-content: space-evenly;
             @include Shadow(15px, 0.15);
+
+            @include breakpoint(desktop) {
+                width: 30%;
+            }
 
 
             &_round {
@@ -37,26 +57,26 @@
             }
 
             &_icon {
-                position: absolute;
-                top: 27px;
-                left: 35.5px;
+                line-height: 72px;
             }
 
             &_txt {
-                position: relative;
                 line-height: 72px;
                 font-weight: $font-weight-Medium;
+                white-space: nowrap;
+
             }
 
             &:hover {
-                background: lighten($secondary-colors, 20%);
-                // @include bg-linearGradient($primary-colors-lighten, );
+                background: lighten($primary-colors, 20%);
 
                 .frame_icon .fa-solid {
                     color: $primary-colors;
                 }
             }
         }
+
+
     }
 
 }

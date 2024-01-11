@@ -5,3 +5,18 @@
 @mixin bg-linearGradient($color1, $color2) {
     background: linear-gradient(0deg, $color1 -11.44%, $color2 123.93%);
 }
+
+@mixin breakpoint($point) {
+    @if $point ==tablett {
+        @media (min-width : 768px) {
+            @content;
+        }
+    }
+
+    @else if $point ==desktop {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+}
