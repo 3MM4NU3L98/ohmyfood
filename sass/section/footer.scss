@@ -1,6 +1,8 @@
 footer object {
+    position: relative;
     width: 100vw;
     height: 183px;
+    z-index: 1;
 
     @include breakpoint(tablett) {
         height: 140px;
@@ -19,11 +21,16 @@ footer object {
     padding: 22px 25px;
     background-color: $footer-bg-color;
 
+    @include breakpoint(tablett) {
+        gap: 0;
+        padding: 30px 25px;
+    }
+
 
     @include breakpoint(desktop) {
         flex-direction: row-reverse;
         height: 114px;
-        padding: 30px 25px;
+
     }
 
     h4 {
@@ -68,6 +75,10 @@ footer object {
 
             &-short {
                 width: 130px;
+            }
+
+            a {
+                color: $txt-footer-color;
             }
         }
     }

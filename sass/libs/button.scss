@@ -5,19 +5,9 @@
     border-radius: 25px;
     color: $txt-footer-color;
     @include bg-linearGradient($primary-colors, $secondary-colors);
-    @include Shadow(10px, 0.25);
 
     &:hover {
         @include bg-linearGradient($primary-colors-lighten, $secondary-colors-lighten);
-
+        @include Shadow(15px, 0.35);
     }
-
-
-
-
-
-
-
-
-
 }
