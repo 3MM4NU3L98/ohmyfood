@@ -20,7 +20,7 @@
         flex-direction: column;
         gap: 25px;
 
-        @include breakpoint(desktop) {
+        @include breakpoint(tablett) {
             flex-direction: row;
             justify-content: space-between;
             gap: 36px;
@@ -36,7 +36,7 @@
             justify-content: space-evenly;
             @include Shadow(15px, 0.15);
 
-            @include breakpoint(desktop) {
+            @include breakpoint(tablett) {
                 width: 30%;
             }
 
@@ -68,9 +68,10 @@
             }
 
             &:hover {
-                background: lighten($primary-colors, 20%);
+                background: lighten($primary-colors, 30%);
 
-                .frame_icon .fa-solid {
+                .fa-solid,
+                .frame_txt {
                     color: $primary-colors;
                 }
             }

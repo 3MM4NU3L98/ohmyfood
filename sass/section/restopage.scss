@@ -24,6 +24,10 @@
         width: 100%;
         max-width: 1055px;
 
+        @include breakpoint(tablett) {
+            padding: 51px 150px 40px 150px;
+        }
+
         @include breakpoint(desktop) {
             padding: 51px 210px 40px 210px;
         }

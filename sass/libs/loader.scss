@@ -1,44 +1,44 @@
 .loader {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    animation: invisible 0.5s linear 3s 1 both;
-}
-
-.loader::before {
-    content: "";
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 101;
-    overflow: hidden;
-    background: $main-bg-color;
-    opacity: 1;
-}
+    z-index: 100;
+    animation: invisible 0.5s linear 3s 1 both;
 
-.loader::after {
-    box-sizing: border-box;
-    z-index: 102;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -25px 0 0 -25px;
-    border: 10px solid $secondary-colors;
-    border-top: 10px solid $primary-colors;
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    opacity: 1;
-    animation: spin 2s linear infinite;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 101;
+        overflow: hidden;
+        background: $main-bg-color;
 
+    }
+
+    &::after {
+        box-sizing: border-box;
+        z-index: 102;
+        content: "";
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin: -25px 0 0 -25px;
+        border: 10px solid $secondary-colors;
+        border-top: 10px solid $primary-colors;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        animation: spin 2s linear infinite;
+
+    }
 }
 
 @keyframes spin {
     100% {
         transform: rotate(360deg);
     }
+
 }
 
 @keyframes invisible {
@@ -48,7 +48,7 @@
 
     to {
         opacity: 0;
-        height: 0;
+        z-index: 0;
 
     }
 }

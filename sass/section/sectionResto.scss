@@ -21,7 +21,7 @@
         flex-direction: column;
         gap: 18px;
 
-        @include breakpoint(desktop) {
+        @include breakpoint(tablett) {
             flex-direction: row;
             justify-content: space-between;
             gap: 100px;

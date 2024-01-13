@@ -2,6 +2,10 @@ footer object {
     width: 100vw;
     height: 183px;
 
+    @include breakpoint(tablett) {
+        height: 140px;
+    }
+
     @include breakpoint(desktop) {
         height: 114px;
     }
@@ -38,7 +42,7 @@ footer object {
         flex-direction: column;
         gap: 7px;
 
-        @include breakpoint(desktop) {
+        @include breakpoint(tablett) {
             flex-direction: row;
             height: 54px;
             align-self: self-end;
@@ -48,7 +52,7 @@ footer object {
             color: $txt-footer-color;
             list-style: none;
 
-            @include breakpoint(desktop) {
+            @include breakpoint(tablett) {
                 align-self: self-end;
             }
 
